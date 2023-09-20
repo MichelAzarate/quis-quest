@@ -125,7 +125,7 @@ p{
 .incorrect {
     background-color: red;
     
-    animation: fundoPiscante .5s infinite alternate;
+    animation: fundoPiscante .05s infinite alternate;
 }
 @keyframes fundoPiscante {
     0% {
