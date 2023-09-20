@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --cor-vermelha: #e00000;
+    --cor-vermelha-luz: #f67e7e;
+    --cor-clara: #fff;
+    --cor-preta: #202020;
+    --light-gray: #dedede;
+     --cinza-escuro: #a1a1a0;
+    --cor-primaria: #0275d8;
+    --cor-sucesso: #5cb85c;
+    --cor-info: #5bc0de;
+    --cor-atencao: #f0ad4e;
+    --cor-perigo: #d9534f;
+    --cor-inverso: #292b2c;
+    
+--poppins-font: 'Poppins', sans-serif;
+    
+    --container-widht-lg: 76%;
+    --container-widht-md: 90%;
+    --container-widht-sm: 95%;
+    
+    --transisao: all 400ms ease;
+    
+}
+button{
+    cursor: pointer;
+}
+
+body {
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: rgba(4, 58, 235, 0.685);
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid #e1e1e6;
+    border-radius: 6px;
+    padding: 16px;
+    box-shadow: 0 0 2px 2px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.questions-container, .controls-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.question{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.answers-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+.next-question{
+    margin-top: 37px;
+}
+.button{
+    background-color: #011451c5;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 32px;
+
+    transition: filter 0.2s;
+}
+.question, .message{
+    text-shadow: -5px 5px 20px #000,
+            -10px 10px 30px #000,
+            -20px 15px 40px #000,
+            -25px 20px 50px #000;
+    text-align: center;
+
+}
+.button:not(dataset):hover{
+    filter: brightness(0.5); 
+}
+.answer:disabled{
+    cursor: not-allowed;
+}
+
+.final-message {
+    font-size: 20px;
+    text-align: center;
+}
+.final-message span{
+    display: block;
+    margin-top: 8px;
+}
+
+p{
+    margin: 15px;;
+}
+
+.hide{
+    display: none;
+}
+.correct {
+    background-color: green;
+}
+.incorrect {
+    background-color: red;
+}
