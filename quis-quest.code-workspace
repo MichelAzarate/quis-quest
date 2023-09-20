@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../JavaScript/script/projecto html css js/quiz0.1version (2)/quiz0.1version"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "quiz0.1version"
+	}
+}
